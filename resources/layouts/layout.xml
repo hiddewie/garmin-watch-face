@@ -1,14 +1,5 @@
 <layout id="WatchFace">
     <drawable class="Background" />
-    <drawable id="Test" />
-   <!--  -> <label id="TimeLabel" x="center" y="center" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
-   
-    <! <drawable id="Shoe" />-->
-    
-<!--  >    <label id="DateLabel" x="center" y="10" font="Graphics.FONT_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
-    
-    <drawable id="AlarmTest" />-->
-    <drawable id="center" />
     
     <drawable id="left" class="Twelve">
         <param name="x">50</param>
