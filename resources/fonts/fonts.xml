@@ -1,0 +1,5 @@
+<resources>
+
+    <font id="myFont" filename="export.fnt" filter="0123456789" />
+  	<!-- antialias="true"  -->
+</resources>
