@@ -23,6 +23,11 @@ class Battery extends Toybox.WatchUi.Drawable {
     }
 
     function draw(dc) {
+		var showBattery = Application.getApp().getProperty("ShowBattery");
+		if (!showBattery) {
+			return;
+		}
+
 	    var battery = System.getSystemStats().battery / 100.0;
 
 		var color = Graphics.COLOR_GREEN;

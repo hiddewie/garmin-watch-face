@@ -7,7 +7,6 @@ class Twelve extends Toybox.WatchUi.Drawable {
     hidden var width;
     hidden var height;
     hidden var type;
-    hidden var color;
 
    	hidden var penWidth = 4;
    	hidden var dotPenWidth = 6;
@@ -22,10 +21,13 @@ class Twelve extends Toybox.WatchUi.Drawable {
         width = options[:width];
         height = options[:height];
         type = options[:type];
-        color = options[:color];
     }
 
     function draw(dc) {
+		var color = (type == :hour ?
+			Application.getApp().getProperty("HourColor") :
+			Application.getApp().getProperty("MinuteColor"));
+
    		dc.setPenWidth(penWidth);
         dc.setColor(color, color);
 

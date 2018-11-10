@@ -1,7 +1,16 @@
 <properties>
 
-    <property id="BackgroundColor" type="number">0x555555</property>
-    <property id="ForegroundColor" type="number">0x0000FF</property>
-    <property id="UseMilitaryFormat" type="boolean">true</property>
+    <property id="BackgroundColor" type="number">0x000000</property>
+    <property id="StepsColor" type="number">0x00AAFF</property>
+    <property id="HourColor" type="number">0x00AAFF</property>
+    <property id="MinuteColor" type="number">0xFFFFFF</property>
+    <property id="AlarmColor" type="number">0xFFFFFF</property>
+    <property id="DayOfWeekColor" type="number">0x00AAFF</property>
+    <property id="DayOfMonthColor" type="number">0xFFFFFF</property>
+    
+    <property id="ShowMoveIndicator" type="boolean">true</property>
+    <property id="ShowSteps" type="boolean">true</property>
+    <property id="ShowBattery" type="boolean">true</property>
+    <property id="ShowAlarm" type="boolean">true</property>
 
 </properties>

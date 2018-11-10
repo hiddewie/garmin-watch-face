@@ -1,5 +1,5 @@
 
-# Garmin Watchface
+# Garmin Watch face
 
 ![Screenshot](documentation/Watch.jpg)
 
@@ -12,6 +12,9 @@ Features:
 - Steps as part of goal
 - Move indicator
 - Day of week and day of month
+
+The colors of all the parts of the watch face can be configured individually. Also, some elements can be removed
+from the watch face.
 
 
 ### Explanation of base-12 notation

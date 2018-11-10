@@ -7,7 +7,6 @@
         <param name="height">40</param>
         <param name="width">40</param>
         <param name="type">:hour</param>
-        <param name="color">Graphics.COLOR_BLUE</param>
     </drawable>
    
     <drawable id="right" class="Twelve">
@@ -16,7 +15,6 @@
         <param name="height">40</param>
         <param name="width">40</param>
         <param name="type">:minute</param>
-        <param name="color">Graphics.COLOR_WHITE</param>
     </drawable>
     
     <drawable id="steps" class="Steps"></drawable>
@@ -25,18 +23,15 @@
     <drawable id="dayOfWeek" class="DayOfWeek">
         <param name="x">104</param>
         <param name="y">152</param>
-        <param name="color">Graphics.COLOR_BLUE</param>
     </drawable>
     <drawable id="dayOfMonth" class="DayOfMonth">
         <param name="x">112</param>
         <param name="y">152</param>
-        <param name="color">Graphics.COLOR_WHITE</param>
     </drawable>
     
     <drawable id="alarms" class="Alarms">
         <param name="x">116</param>
         <param name="y">8</param>
-        <param name="color">Graphics.COLOR_WHITE</param>
     </drawable>
     
     <drawable id="battery" class="Battery">

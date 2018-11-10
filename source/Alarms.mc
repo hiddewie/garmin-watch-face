@@ -4,7 +4,6 @@ using Toybox.WatchUi;
 class Alarms extends Toybox.WatchUi.Drawable {
     hidden var x;
     hidden var y;
-    hidden var color;
 
     hidden var alarm;
 
@@ -13,18 +12,22 @@ class Alarms extends Toybox.WatchUi.Drawable {
 
         x = options[:x];
         y = options[:y];
-        color = options[:color];
 
         alarm = new WatchUi.Bitmap({
             :rezId => Rez.Drawables.alarm,
             :locX => x,
             :locY => y
         });
-
     }
 
     function draw(dc) {
+		var showAlarm = Application.getApp().getProperty("ShowAlarm");
+		if (!showAlarm) {
+			return;
+		}
+
     	var alarms = System.getDeviceSettings().alarmCount;
+    	var color = Application.getApp().getProperty("AlarmColor");
 
 		dc.setColor(color, Graphics.COLOR_TRANSPARENT);
 		if (alarms >= 1) {

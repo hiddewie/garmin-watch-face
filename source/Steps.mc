@@ -12,6 +12,11 @@ class Steps extends Toybox.WatchUi.Drawable {
     }
 
     function draw(dc) {
+		var showSteps = Application.getApp().getProperty("ShowSteps");
+		if (!showSteps) {
+			return;
+		}
+
 		var info = ActivityMonitor.getInfo();
 
 		if (info != null && info.steps != null && info.stepGoal != null && info.stepGoal > 0) {
@@ -19,7 +24,9 @@ class Steps extends Toybox.WatchUi.Drawable {
 			var goal = info.stepGoal;
 			var x = steps.toFloat() / goal;
 
-			dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
+    		var color = Application.getApp().getProperty("StepsColor");
+			dc.setColor(color, Graphics.COLOR_TRANSPARENT);
+
 			dc.setPenWidth(penWidth);
 			dc.drawArc(108, 90, 109 - 5, Graphics.ARC_CLOCKWISE, -115 + 1, -115 - (availableDegrees * x));
 		}
