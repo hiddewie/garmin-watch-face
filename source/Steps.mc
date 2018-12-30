@@ -23,6 +23,9 @@ class Steps extends Toybox.WatchUi.Drawable {
 			var steps = info.steps;
 			var goal = info.stepGoal;
 			var x = steps.toFloat() / goal;
+			if (x > 1.0) {
+				x = 1.0;
+			}
 
     		var color = Application.getApp().getProperty("StepsColor");
 			dc.setColor(color, Graphics.COLOR_TRANSPARENT);
