@@ -4,7 +4,7 @@ using Toybox.ActivityMonitor;
 
 class Move extends Toybox.WatchUi.Drawable {
 
-   	hidden var penWidth = 6;
+   	hidden var penWidth = 7;
     hidden var availableDegrees = 130;
 
     function initialize(options) {
@@ -32,23 +32,23 @@ class Move extends Toybox.WatchUi.Drawable {
 
 			if (drawFirst) {
 				dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
-				dc.drawArc(108, 90, 109 - 5, Graphics.ARC_COUNTER_CLOCKWISE, -65, -1);
+				dc.drawArc(108, 90, 109 - 4, Graphics.ARC_COUNTER_CLOCKWISE, -65, -1);
 			}
 			if (drawSecond) {
 				dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-				dc.drawArc(108, 90, 109 - 5, Graphics.ARC_COUNTER_CLOCKWISE, 1, 14);
+				dc.drawArc(108, 90, 109 - 4, Graphics.ARC_COUNTER_CLOCKWISE, 1, 14);
 			}
 			if (drawThird) {
 				dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-				dc.drawArc(108, 90, 109 - 5, Graphics.ARC_COUNTER_CLOCKWISE, 16, 29);
+				dc.drawArc(108, 90, 109 - 4, Graphics.ARC_COUNTER_CLOCKWISE, 16, 29);
 			}
 			if (drawFourth) {
 				dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-				dc.drawArc(108, 90, 109 - 5, Graphics.ARC_COUNTER_CLOCKWISE, 31, 44);
+				dc.drawArc(108, 90, 109 - 4, Graphics.ARC_COUNTER_CLOCKWISE, 31, 44);
 			}
 			if (drawFifth) {
 				dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
-				dc.drawArc(108, 90, 109 - 5, Graphics.ARC_COUNTER_CLOCKWISE, 46, 65);
+				dc.drawArc(108, 90, 109 - 4, Graphics.ARC_COUNTER_CLOCKWISE, 46, 65);
 			}
 		}
     }

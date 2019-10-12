@@ -2,18 +2,14 @@
     <drawable class="Background" />
     
     <drawable id="left" class="Twelve">
-        <param name="x">50</param>
-        <param name="y">70</param>
-        <param name="height">40</param>
-        <param name="width">40</param>
+        <param name="x">83</param>
+        <param name="y">90</param>
         <param name="type">:hour</param>
     </drawable>
    
     <drawable id="right" class="Twelve">
-        <param name="x">125</param>
-        <param name="y">70</param>
-        <param name="height">40</param>
-        <param name="width">40</param>
+        <param name="x">133</param>
+        <param name="y">90</param>
         <param name="type">:minute</param>
     </drawable>
     
