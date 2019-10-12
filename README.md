@@ -34,8 +34,6 @@ The minute notation increases the value every five minutes. Every minute the pos
 
 #### Example
 
-![Example](documentation/Example.JPG)
-
 The screenshot above shows a time of 23:44 in decimal time. (11 hours after 12 o'clock, and 8×5 + 4 minutes).
 
 Also, 2 alarms are set, around 70% of the step goal has been reached and the move alert is at level 5.
