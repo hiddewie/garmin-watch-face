@@ -1,7 +1,7 @@
 
 # Garmin Watch face
 
-![Screenshot](documentation/Watch.jpg)
+![Screenshot](documentation/Watch.png)
 
 This project creates a watch face using a base-12 hour and minute notation.
 
@@ -19,41 +19,23 @@ from the watch face.
 
 ### Explanation of base-12 notation
 
-The numbers:
+The numbers from 0 to 9 are the same as in the decimal (base-10) notation.
 
-0-2
-![0](documentation/0.JPG)
-![1](documentation/1.JPG)
-![2](documentation/2.JPG)
-
-3-5
-![3](documentation/3.JPG)
-![4](documentation/4.JPG)
-![5](documentation/5.JPG)
-
-6-8
-![6](documentation/6.JPG)
-![7](documentation/7.JPG)
-![8](documentation/8.JPG)
-
-9-11
-![9](documentation/9.JPG)
-![10](documentation/10.JPG)
-![11](documentation/11.JPG)
+The decimal numbers 10 and 11 are represented with the runic characters ᛋ and ᚩ.
 
 ##### Hour
 
-The hour notation is two times 12 hours. The first twelve hours are the values 0-11 (base 10), while the last 
-12 hours have a dot inside the number.
+The hour notation is two times 12 hours. The first twelve hours are the values 0-11 (base 10) and are preceded with a 0. The last 
+12 hours are preceded by a 1.
 
 ##### Minute
 
-The minute notation increases the value every five minutes. Every minute a dot is added. First on top, then on
-the right, then on the bottom and finally on the left.
-
+The minute notation increases the value every five minutes. Every minute the postfix is increased by one.
 
 #### Example
 
 ![Example](documentation/Example.JPG)
 
-The screenshot shows a time of 14:22 in decimal time. (2 hours after 12 o'clock, and 4×5 + 2 minutes).
+The screenshot above shows a time of 23:44 in decimal time. (11 hours after 12 o'clock, and 8×5 + 4 minutes).
+
+Also, 2 alarms are set, around 70% of the step goal has been reached and the move alert is at level 5.
