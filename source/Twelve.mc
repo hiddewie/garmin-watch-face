@@ -15,9 +15,9 @@ class Twelve extends Toybox.WatchUi.Drawable {
 
     function initialize(options) {
         Toybox.WatchUi.Drawable.initialize(options);
-		font = Toybox.WatchUi.loadResource(Rez.Fonts.runic);
-		fontNumber = Toybox.WatchUi.loadResource(Rez.Fonts.runic_number);
-		fontNumberSmall = Toybox.WatchUi.loadResource(Rez.Fonts.runic_number_small);
+		// font = Toybox.WatchUi.loadResource(Rez.Fonts.symbola);
+		fontNumber = Toybox.WatchUi.loadResource(Rez.Fonts.symbola_number);
+		fontNumberSmall = Toybox.WatchUi.loadResource(Rez.Fonts.symbola_number_small);
 
         x = options[:x];
         y = options[:y];
@@ -38,7 +38,7 @@ class Twelve extends Toybox.WatchUi.Drawable {
 		if (0 <= largeValue && largeValue <= 9) {
 			dc.drawText(type == :minute ? x : x +width, y + height/2 - numberFontHeight/2, fontNumber, largeValue.toString(), Graphics.TEXT_JUSTIFY_CENTER);
 		} else if (largeValue <= 12) {
-        	dc.drawText(type == :minute ? x : x +width, y + height/2 - fontHeight/2, font, largeValue == 10 ? "ᛋ" : "ᚩ", Graphics.TEXT_JUSTIFY_CENTER);
+        	dc.drawText(type == :minute ? x : x +width, y + height/2 - fontHeight/2, fontNumber, largeValue == 10 ? "↊" : "↋", Graphics.TEXT_JUSTIFY_CENTER);
 		}
 
 		dc.drawText(x + (type == :minute ? 1 : -1) * 30, y + height/2 - numberSmallFontHeight/2, fontNumberSmall, smallValue.toString(), Graphics.TEXT_JUSTIFY_CENTER);
