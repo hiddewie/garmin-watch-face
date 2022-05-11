@@ -28,7 +28,9 @@ class Battery extends Toybox.WatchUi.Drawable {
 			return;
 		}
 
-	    var battery = System.getSystemStats().battery / 100.0;
+		var stats = System.getSystemStats();
+	    var battery = stats.battery / 100.0;
+		var charging = stats.charging;
 
 		var color = Graphics.COLOR_GREEN;
 		if (battery <= lowBatteryLevel) {
@@ -36,6 +38,9 @@ class Battery extends Toybox.WatchUi.Drawable {
 		}
 		if (battery <= criticalBatteryLevel) {
 			color = Graphics.COLOR_RED;
+		}
+		if (charging) {
+			color = Graphics.COLOR_BLUE;
 		}
 
 		var drawWidth = 4 + battery * (width - 8);
