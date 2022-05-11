@@ -6,10 +6,9 @@ class Twelve extends Toybox.WatchUi.Drawable {
     hidden var y;
     hidden var type;
 
-   	hidden var fontHeight = 64;
-   	hidden var numberFontHeight = 84 + 14;
-   	hidden var numberSmallFontHeight = 48 + 6;
-   	hidden var fontWidth = 30;
+   	hidden var fontHeight = 100;
+   	hidden var smallFontHeight = 48;
+   	hidden var fontWidth = 42;
 
    	var font, fontNumber, fontNumberSmall;
 
@@ -36,11 +35,11 @@ class Twelve extends Toybox.WatchUi.Drawable {
         dc.setColor(color, Graphics.COLOR_TRANSPARENT);
 
 		if (0 <= largeValue && largeValue <= 9) {
-			dc.drawText(type == :minute ? x : x +width, y + height/2 - numberFontHeight/2, fontNumber, largeValue.toString(), Graphics.TEXT_JUSTIFY_CENTER);
+			dc.drawText(type == :minute ? x : x, y + height/2 - fontHeight/2, fontNumber, largeValue.toString(), Graphics.TEXT_JUSTIFY_CENTER);
 		} else if (largeValue <= 12) {
-        	dc.drawText(type == :minute ? x : x +width, y + height/2 - fontHeight/2, fontNumber, largeValue == 10 ? "↊" : "↋", Graphics.TEXT_JUSTIFY_CENTER);
+        	dc.drawText(type == :minute ? x : x, y + height/2 - fontHeight/2, fontNumber, largeValue == 10 ? "↊" : "↋", Graphics.TEXT_JUSTIFY_CENTER);
 		}
 
-		dc.drawText(x + (type == :minute ? 1 : -1) * 30, y + height/2 - numberSmallFontHeight/2, fontNumberSmall, smallValue.toString(), Graphics.TEXT_JUSTIFY_CENTER);
+		dc.drawText(x + (type == :minute ? 1 : -1) * fontWidth, y + height/2 - smallFontHeight/2, fontNumberSmall, smallValue.toString(), Graphics.TEXT_JUSTIFY_CENTER);
     }
 }

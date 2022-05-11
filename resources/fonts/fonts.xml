@@ -1,4 +1,4 @@
 <resources>
-	<font id="symbola_number" filename="symbola_84.fnt" antialias="true" filter="0123456789↊↋" />
+	<font id="symbola_number" filename="symbola_100.fnt" antialias="true" filter="0123456789↊↋" />
 	<font id="symbola_number_small" filename="symbola_48.fnt" antialias="true" filter="01234" />
 </resources>
