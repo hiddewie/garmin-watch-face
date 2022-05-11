@@ -21,11 +21,11 @@ from the watch face.
 
 The numbers from 0 to 9 are the same as in the decimal (base-10) notation.
 
-The decimal numbers 10 and 11 are represented with the runic characters ᛋ and ᚩ.
+The decimal numbers 10 and 11 are represented with the dodezenal characters ↊ and ↋.
 
 ##### Hour
 
-The hour notation is two times 12 hours. The first twelve hours are the values 0-11 (base 10) and are preceded with a 0. The last 
+The hour notation is two times 12 hours. The first twelve hours are the values 0-11 (base 10) and are preceded with a 0. The last
 12 hours are preceded by a 1.
 
 ##### Minute

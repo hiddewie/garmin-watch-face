@@ -1,5 +1,4 @@
 <resources>
-	<font id="runic" filename="runic_64.fnt" antialias="true" filter="ᛋᚩ" />
-	<font id="runic_number" filename="runic_84.fnt" antialias="true" filter="0123456789" />
-	<font id="runic_number_small" filename="runic_48.fnt" antialias="true" filter="01234" />
+	<font id="symbola_number" filename="symbola_100.fnt" antialias="true" filter="0123456789↊↋" />
+	<font id="symbola_number_small" filename="symbola_48.fnt" antialias="true" filter="01234" />
 </resources>
