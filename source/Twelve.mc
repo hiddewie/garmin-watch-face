@@ -6,17 +6,16 @@ class Twelve extends Toybox.WatchUi.Drawable {
     hidden var y;
     hidden var type;
 
-   	hidden var fontHeight = 100;
-   	hidden var smallFontHeight = 48;
-   	hidden var fontWidth = 42;
+   	hidden var fontHeight = 100 + 12;
+   	hidden var smallFontHeight = 48 + 8;
+   	hidden var fontWidth = 40;
 
    	var font, fontNumber, fontNumberSmall;
 
     function initialize(options) {
         Toybox.WatchUi.Drawable.initialize(options);
-		// font = Toybox.WatchUi.loadResource(Rez.Fonts.symbola);
-		fontNumber = Toybox.WatchUi.loadResource(Rez.Fonts.symbola_number);
-		fontNumberSmall = Toybox.WatchUi.loadResource(Rez.Fonts.symbola_number_small);
+		fontNumber = Toybox.WatchUi.loadResource(Rez.Fonts.PragmataPro_number);
+		fontNumberSmall = Toybox.WatchUi.loadResource(Rez.Fonts.PragmataPro_number_small);
 
         x = options[:x];
         y = options[:y];
