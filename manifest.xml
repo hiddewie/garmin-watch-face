@@ -2,6 +2,7 @@
     <iq:application entry="App" id="9bd85ec140974bb1bf521008a1362784" launcherIcon="@Drawables.LauncherIcon" minSdkVersion="2.4.0" name="@Strings.AppName" type="watchface" version="1.0.0">
         <iq:products>
             <iq:product id="fr735xt"/>
+            <iq:product id="fr955"/>
         </iq:products>
         <iq:permissions/>
         <iq:languages>
