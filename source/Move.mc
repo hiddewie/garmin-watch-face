@@ -12,7 +12,7 @@ class Move extends Toybox.WatchUi.Drawable {
     }
 
     function draw(dc) {
-		var showMove = Application.getApp().getProperty("ShowMoveIndicator");
+		var showMove = Application.Properties.getValue("ShowMoveIndicator");
 		if (!showMove) {
 			return;
 		}

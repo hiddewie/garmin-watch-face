@@ -23,7 +23,7 @@ class Battery extends Toybox.WatchUi.Drawable {
     }
 
     function draw(dc) {
-		var showBattery = Application.getApp().getProperty("ShowBattery");
+		var showBattery = Application.Properties.getValue("ShowBattery");
 		if (!showBattery) {
 			return;
 		}

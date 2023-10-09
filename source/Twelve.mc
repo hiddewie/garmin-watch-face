@@ -24,8 +24,8 @@ class Twelve extends Toybox.WatchUi.Drawable {
 
     function draw(dc) {
 		var color = (type == :hour ?
-			Application.getApp().getProperty("HourColor") :
-			Application.getApp().getProperty("MinuteColor"));
+			Application.Properties.getValue("HourColor") :
+			Application.Properties.getValue("MinuteColor"));
 
         var clockTime = System.getClockTime();
 		var largeValue = (type == :hour ? (clockTime.hour % 12) : (clockTime.min / 5));

@@ -21,20 +21,20 @@ class Alarms extends Toybox.WatchUi.Drawable {
     }
 
     function draw(dc) {
-		var showAlarm = Application.getApp().getProperty("ShowAlarm");
+		var showAlarm = Application.Properties.getValue("ShowAlarm");
 		if (!showAlarm) {
 			return;
 		}
 
     	var alarms = System.getDeviceSettings().alarmCount;
-    	var color = Application.getApp().getProperty("AlarmColor");
+    	var color = Application.Properties.getValue("AlarmColor");
 
 		dc.setColor(color, Graphics.COLOR_TRANSPARENT);
 		if (alarms >= 1) {
 			alarm.draw(dc);
 
 			if (alarms >= 2) {
-				dc.drawText(x + 18, y - 2, Graphics.FONT_TINY, alarms, Graphics.TEXT_JUSTIFY_LEFT);
+				dc.drawText(x + 18, y - 2, Graphics.FONT_TINY, alarms.toString(), Graphics.TEXT_JUSTIFY_LEFT);
 			}
 		}
     }

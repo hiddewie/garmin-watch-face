@@ -12,7 +12,7 @@ class Steps extends Toybox.WatchUi.Drawable {
     }
 
     function draw(dc) {
-		var showSteps = Application.getApp().getProperty("ShowSteps");
+		var showSteps = Application.Properties.getValue("ShowSteps");
 		if (!showSteps) {
 			return;
 		}
@@ -27,7 +27,7 @@ class Steps extends Toybox.WatchUi.Drawable {
 				x = 1.0;
 			}
 
-    		var color = Application.getApp().getProperty("StepsColor");
+    		var color = Application.Properties.getValue("StepsColor");
 			dc.setColor(color, Graphics.COLOR_TRANSPARENT);
 
 			dc.setPenWidth(penWidth);

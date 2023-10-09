@@ -18,11 +18,10 @@ class DayOfWeek extends Toybox.WatchUi.Drawable {
     function draw(dc) {
     	Toybox.WatchUi.Drawable.draw(dc);
 
-        var clockTime = System.getClockTime();
         var today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
         var dateString = Lang.format("$1$", [today.day_of_week]);
 
-    	var color = Application.getApp().getProperty("DayOfWeekColor");
+    	var color = Application.Properties.getValue("DayOfWeekColor");
 
 		dc.setColor(color, Graphics.COLOR_TRANSPARENT);
         dc.drawText(x, y, Graphics.FONT_TINY, dateString, Graphics.TEXT_JUSTIFY_RIGHT);
