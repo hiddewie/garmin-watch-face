@@ -8,7 +8,7 @@ class DayOfWeek extends Toybox.WatchUi.Drawable {
     hidden var x;
     hidden var y;
 
-    function initialize(options) {
+    function initialize(options as Toybox.Lang.Dictionary) {
         Toybox.WatchUi.Drawable.initialize(options);
 
         x = options[:x];

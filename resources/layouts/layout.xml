@@ -2,14 +2,14 @@
     <drawable class="Background" />
 
     <drawable id="left" class="Twelve">
-        <param name="x">80</param>
-        <param name="y">90</param>
+        <param name="x">100</param>
+        <param name="y">130</param>
         <param name="type">:hour</param>
     </drawable>
 
     <drawable id="right" class="Twelve">
-        <param name="x">136</param>
-        <param name="y">90</param>
+        <param name="x">160</param>
+        <param name="y">130</param>
         <param name="type">:minute</param>
     </drawable>
 
@@ -17,22 +17,22 @@
     <drawable id="move" class="Move"></drawable>
 
     <drawable id="dayOfWeek" class="DayOfWeek">
-        <param name="x">104</param>
-        <param name="y">152</param>
+        <param name="x">124</param>
+        <param name="y">200</param>
     </drawable>
     <drawable id="dayOfMonth" class="DayOfMonth">
-        <param name="x">112</param>
-        <param name="y">152</param>
+        <param name="x">136</param>
+        <param name="y">200</param>
     </drawable>
 
     <drawable id="alarms" class="Alarms">
-        <param name="x">116</param>
-        <param name="y">8</param>
+        <param name="x">136</param>
+        <param name="y">26</param>
     </drawable>
 
     <drawable id="battery" class="Battery">
-        <param name="x">76</param>
-        <param name="y">11</param>
+        <param name="x">100</param>
+        <param name="y">30</param>
         <param name="width">22</param>
         <param name="height">10</param>
     </drawable>

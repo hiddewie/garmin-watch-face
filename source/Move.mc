@@ -7,7 +7,7 @@ class Move extends Toybox.WatchUi.Drawable {
    	hidden var penWidth = 7;
     hidden var availableDegrees = 130;
 
-    function initialize(options) {
+    function initialize(options as Toybox.Lang.Dictionary) {
         Toybox.WatchUi.Drawable.initialize(options);
     }
 

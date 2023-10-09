@@ -7,7 +7,7 @@ class Alarms extends Toybox.WatchUi.Drawable {
 
     hidden var alarm;
 
-    function initialize(options) {
+    function initialize(options as Toybox.Lang.Dictionary) {
         Toybox.WatchUi.Drawable.initialize(options);
 
         x = options[:x];
@@ -34,7 +34,7 @@ class Alarms extends Toybox.WatchUi.Drawable {
 			alarm.draw(dc);
 
 			if (alarms >= 2) {
-				dc.drawText(x + 18, y - 2, Graphics.FONT_TINY, alarms.toString(), Graphics.TEXT_JUSTIFY_LEFT);
+				dc.drawText(x + 18, y - 6, Graphics.FONT_TINY, alarms.toString(), Graphics.TEXT_JUSTIFY_LEFT);
 			}
 		}
     }

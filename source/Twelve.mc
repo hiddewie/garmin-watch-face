@@ -1,5 +1,6 @@
 using Toybox.Application;
 using Toybox.WatchUi;
+using Toybox.System;
 
 class Twelve extends Toybox.WatchUi.Drawable {
     hidden var x;
@@ -12,7 +13,7 @@ class Twelve extends Toybox.WatchUi.Drawable {
 
    	var font, fontNumber, fontNumberSmall;
 
-    function initialize(options) {
+    function initialize(options as Toybox.Lang.Dictionary) {
         Toybox.WatchUi.Drawable.initialize(options);
 		fontNumber = Toybox.WatchUi.loadResource(Rez.Fonts.PragmataPro_number);
 		fontNumberSmall = Toybox.WatchUi.loadResource(Rez.Fonts.PragmataPro_number_small);

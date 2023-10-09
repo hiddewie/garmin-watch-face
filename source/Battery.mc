@@ -13,7 +13,7 @@ class Battery extends Toybox.WatchUi.Drawable {
     hidden var lowBatteryLevel = 0.25;
     hidden var criticalBatteryLevel = 0.1;
 
-    function initialize(options) {
+    function initialize(options as Toybox.Lang.Dictionary) {
         Toybox.WatchUi.Drawable.initialize(options);
 
         x = options[:x];
@@ -30,7 +30,7 @@ class Battery extends Toybox.WatchUi.Drawable {
 
 		var stats = System.getSystemStats();
 	    var battery = stats.battery / 100.0;
-		//var charging = stats.charging;
+		var charging = stats.charging;
 
 		var color = Graphics.COLOR_GREEN;
 		if (battery <= lowBatteryLevel) {
@@ -39,9 +39,9 @@ class Battery extends Toybox.WatchUi.Drawable {
 		if (battery <= criticalBatteryLevel) {
 			color = Graphics.COLOR_RED;
 		}
-		//if (charging) {
-		//	color = Graphics.COLOR_BLUE;
-		//}
+		if (charging) {
+			color = Graphics.COLOR_BLUE;
+		}
 
 		var drawWidth = 4 + battery * (width - 8);
 

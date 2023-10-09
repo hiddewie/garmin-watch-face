@@ -7,9 +7,12 @@ using Toybox.Time.Gregorian;
 class DayOfMonth extends Toybox.WatchUi.Drawable {
     hidden var x;
     hidden var y;
+    hidden var color;
 
-    function initialize(options) {
+    function initialize(options as Toybox.Lang.Dictionary) {
         Toybox.WatchUi.Drawable.initialize(options);
+
+    	color = Application.Properties.getValue("DayOfMonthColor");
 
         x = options[:x];
         y = options[:y];
@@ -20,8 +23,6 @@ class DayOfMonth extends Toybox.WatchUi.Drawable {
 
         var today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
         var dateString = Lang.format("$1$", [today.day]);
-
-    	var color = Application.Properties.getValue("DayOfMonthColor");
 
 		dc.setColor(color, Graphics.COLOR_TRANSPARENT);
         dc.drawText(x, y, Graphics.FONT_TINY, dateString, Graphics.TEXT_JUSTIFY_LEFT);
