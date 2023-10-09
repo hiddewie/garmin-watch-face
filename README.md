@@ -9,8 +9,6 @@ Features:
 - Base 12 hour and minute notation
 - Alarm (icon for one alarm, number for more than one alarm)
 - Battery
-- Steps as part of goal
-- Move indicator
 - Day of week and day of month
 
 The colors of all the parts of the watch face can be configured individually. Also, some elements can be removed

@@ -13,9 +13,6 @@
         <param name="type">:minute</param>
     </drawable>
 
-    <drawable id="steps" class="Steps"></drawable>
-    <drawable id="move" class="Move"></drawable>
-
     <drawable id="dayOfWeek" class="DayOfWeek">
         <param name="x">124</param>
         <param name="y">200</param>

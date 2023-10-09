@@ -3,15 +3,12 @@
     <string id="AppName">Watch base-12</string>
 
     <string id="BackgroundColor">Background color</string>
-    <string id="StepsColor">Steps color</string>
     <string id="HourColor">Hour color</string>
     <string id="MinuteColor">Minute color</string>
     <string id="AlarmColor">Alarm color</string>
     <string id="DayOfWeekColor">Day of week color</string>
     <string id="DayOfMonthColor">Day of month color</string>
-    
-    <string id="ShowMoveIndicator">Show move indicator</string>
-    <string id="ShowSteps">Show steps</string>
+
     <string id="ShowBattery">Show battery</string>
     <string id="ShowAlarm">Show alarms</string>
 
@@ -31,4 +28,3 @@
     <string id="ColorOrange">Orange</string>
 
 </strings>
-	
