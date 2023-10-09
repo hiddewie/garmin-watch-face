@@ -7,30 +7,16 @@
         {
             "type": "monkeyc",
             "request": "launch",
-            "name": "Run App (fr955)",
+            "name": "Run App",
             "stopAtLaunch": false,
             "device": "fr955"
         },
         {
             "type": "monkeyc",
             "request": "launch",
-            "name": "Run Tests (fr955)",
+            "name": "Run Tests",
             "runTests": true,
             "device": "fr955"
-        },
-        {
-            "type": "monkeyc",
-            "request": "launch",
-            "name": "Run App (fr735xt)",
-            "stopAtLaunch": false,
-            "device": "fr735xt"
-        },
-        {
-            "type": "monkeyc",
-            "request": "launch",
-            "name": "Run Tests (fr735xt)",
-            "runTests": true,
-            "device": "fr735xt"
         }
     ]
 }
